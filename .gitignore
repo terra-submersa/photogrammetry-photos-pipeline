@@ -1,0 +1,8 @@
+__pycache__
+.idea
+.dcignore
+*.iml
+.pytest_cache
+venv
+/dist/
+*.egg-info
