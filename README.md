@@ -6,6 +6,10 @@ A pipeline to prepare jpeg photos for photogrammetry reconstruction, with:
    * he-2009: Single Image Haze Removal Using Dark Channel Prior
  * calibrating with external GPX coordinates
 
+## Install
+
+    pip install photogrammetry-photos-pipeline
+
 ## Run
 
     photogrammetry-photos-pipeline \
