@@ -2,8 +2,8 @@
 
 A pipeline to prepare jpeg photos for photogrammetry reconstruction, with:
  * dehazing
-   * meng-2013: Efficient Image Dehazing with Boundary Constraint and Contextual Regularization
-   * he-2009: Single Image Haze Removal Using Dark Channel Prior
+    * he-2009: Single Image Haze Removal Using Dark Channel Prior
+    * meng-2013: Efficient Image Dehazing with Boundary Constraint and Contextual Regularization
  * calibrating with external GPX coordinates
 
 ## Install
@@ -13,9 +13,9 @@ A pipeline to prepare jpeg photos for photogrammetry reconstruction, with:
 ## Run
 
     photogrammetry-photos-pipeline \
-        --images /path/to/orig/jpeg-images
-        --output /path/to/output
-        --dehaze he-2009|meng-2013
+        --images /path/to/orig/*.JPG \
+        --output /path/to/output \
+        --dehaze he-2009|meng-2013 \
         --gpx /path/to/track.gpx
 
 

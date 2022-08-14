@@ -1,8 +1,8 @@
 import cv2
 
+from photogrammetry_photos_pipeline.dehaze import meng_2013
 from photogrammetry_photos_pipeline.dehaze.he_2009 import dark_channel, atm_light, transmission_estimate, \
     transmission_refine, recover
-import image_dehazer
 
 
 def dehaze_he_2009(src: str, target: str):
@@ -21,5 +21,5 @@ def dehaze_he_2009(src: str, target: str):
 
 def dehaze_meng_2013(src: str, target: str):
     src = cv2.imread(src)
-    dehazed = image_dehazer.remove_haze(src)
+    dehazed = meng_2013.dehaze(src)
     cv2.imwrite(target, dehazed)

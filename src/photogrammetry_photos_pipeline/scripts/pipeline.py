@@ -16,8 +16,8 @@ def main():
     logging.basicConfig(level=logging.INFO)
     parser = argparse.ArgumentParser(description='run a pipeline to prepare photo a photogrammetry asembly')
 
-    parser.add_argument("--images", help="Images source directory", type=str, required=True,
-                        metavar='/path/to/images-source')
+    parser.add_argument("--images", help="Images source files", type=str, required=True,
+                        metavar='/path/to/images-source/*.JPG')
     parser.add_argument("--output", help="Images destination directory", type=str, required=True,
                         metavar='/path/to/image-dest')
     parser.add_argument("--gpx", help=".gpx coordinates file for external GPS recording", type=str, required=False,
